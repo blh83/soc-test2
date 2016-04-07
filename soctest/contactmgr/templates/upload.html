@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html
+<h1><em><b> Please Choose a Contact File to Upload </b></em></h1>
+<p/>
+<form id="upload_form" role="form" enctype="multipart/form-data" action="/contactmgr/" method="POST">
+    {% csrf_token %}
+    <input type="file"
+       	   name="file"
+	   id="upload">
+    <input type="submit" value="Upload" />
+</form>
+</html>
